@@ -1,0 +1,45 @@
+form {
+  font-size: 1.2em;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+input[type='number'] {
+  width: 278px;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  border: 1px solid #000;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+fieldset {
+  display: flex;
+  border: 2px solid #000;
+  margin: 0;
+}
+
+fieldset legend {
+  padding: 0 5px;
+  font-size: 1em;
+}
+
+fieldset label:last-child {
+  margin-left: 25px;
+}
+
+button[type='submit'] {
+  padding: 5px 10px;
+  margin-top: 20px;
+  font-size: 1em;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type='submit']:hover {
+  background-color: #ccc;
+}

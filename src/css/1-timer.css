@@ -1,0 +1,42 @@
+#datetime-picker {
+  padding: 0.5em;
+  width: 183px;
+  margin: 20px 0 10px 11px;
+  text-align: center;
+}
+
+button[type="button"] {
+  height: 32px;
+  font-size: 15px;
+  padding: 0.5em 1em;
+  margin-left: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #ddd;
+  color: #666;
+  pointer-events: auto;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+.field {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.field .label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.hidden {
+  display: none;
+}
