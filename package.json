@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/goit-js-hw-10/",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -16,7 +16,7 @@
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Viacheslav Vilkhov <slavavilhov@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "flatpickr": "^4.6.13",
