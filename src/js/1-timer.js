@@ -3,8 +3,8 @@ import 'izitoast/dist/css/iziToast.min.css';
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 
-
 let userSelectedDate;
+let timerInterval;
 const dateTimePicker = document.getElementById('datetime-picker');
 const startButton = document.querySelector('button[data-start]');
 const timerFields = document.querySelectorAll('.timer .value');
@@ -52,6 +52,16 @@ function startCountdown() {
 
   const { days, hours, minutes, seconds } = convertMs(distance);
   updateTimer(days, hours, minutes, seconds);
+
+  if (distance <= 1000) {
+    clearInterval(timerInterval);
+    iziToast.success({
+      title: 'Success',
+      message: 'Timer finished',
+    });
+    dateTimePicker.disabled = false;
+    startButton.disabled = false;
+  }
 }
 
 function handleDateSelection(selectedDates) {
@@ -81,5 +91,5 @@ startButton.addEventListener('click', () => {
   startButton.disabled = true;
   dateTimePicker.disabled = true;
   startCountdown();
-  let timerInterval = setInterval(startCountdown, 1000);
+  timerInterval = setInterval(startCountdown, 1000);
 });
